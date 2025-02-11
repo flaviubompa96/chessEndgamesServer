@@ -9,6 +9,8 @@ RUN pacman -Syu --noconfirm
 RUN pacman -S nodejs-lts-iron --noconfirm
 RUN pacman -S yarn --noconfirm
 
+ADD bin/stockfish /bin/stockfish
+
 ADD runner.sh /runner.sh
 RUN chmod +x /runner.sh
 CMD ["./runner.sh"]
