@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  nodejs:
+  nodejs_endgames:
     container_name: "chessEndgamesServer"
     image: "nodejs-chess_end_games_server:3"
     volumes:
