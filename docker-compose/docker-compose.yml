@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   nodejs:
-    image: "nodejs:3"
+    image: "nodejs-chessEndgamesServer:3"
     volumes:
       - "../:/app"
     build:
