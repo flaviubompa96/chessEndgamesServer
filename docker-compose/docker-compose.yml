@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   nodejs:
-    image: "nodejs:1"
+    image: "nodejs:2"
     volumes:
       - "../:/app"
     build:
