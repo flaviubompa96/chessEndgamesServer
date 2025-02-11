@@ -2,6 +2,8 @@ version: "3.8"
 services:
   nodejs_endgames:
     container_name: "chessEndgamesServer"
+    networks:
+      - chessEndGamesServer-network
     image: "nodejs-chess_end_games_server:3"
     volumes:
       - "../:/app"
@@ -10,3 +12,6 @@ services:
     restart: always
     ports:
       - "4000:4000"
+
+networks:
+  chessEndGamesServer-network:
