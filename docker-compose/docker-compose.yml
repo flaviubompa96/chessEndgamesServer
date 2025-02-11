@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  outside-alerting:
+    image: "nodejs:1"
+    volumes:
+      - "../:/app"
+    build:
+      context: ./nodejs
+    restart: always
+    ports:
+      - "4000:4000"
